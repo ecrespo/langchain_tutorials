@@ -1,0 +1,22 @@
+{
+    "review_id": "R12345",
+    "overall_sentiment": "mixed",
+    "notable_phrases": [
+        "love the discount program in this app",
+        "search functionality is really frustrating"
+    ],
+    "opinions": [
+        {
+            "topic": "discounts",
+            "sentiment": "positive",
+            "problem": "",
+            "suggested_solution": ""
+        },
+        {
+            "topic": "search results",
+            "sentiment": "negative",
+            "problem": "Results are rarely relevant to what I'm looking for",
+            "suggested_solution": "implement category filters and improve search algorithm"
+        }
+    ]
+}
