@@ -209,3 +209,4 @@ __marimo__/
 
 .idea/
 uv.lock
+11_exercise_DietChatbot/conversations.db
