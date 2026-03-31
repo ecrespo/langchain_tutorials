@@ -1,0 +1,115 @@
+[
+  {
+    "inputs": {
+      "raw_review": {
+        "review_id": "R73481",
+        "rating": "★★★☆☆ (3 stars)",
+        "date": "2024-04-29",
+        "text": ""
+      }
+    },
+    "outputs": {
+      "structured_review": {
+        "review_id": "R73481",
+        "overall_sentiment": "neutral",
+        "notable_phrases": [],
+        "opinions": []
+      }
+    }
+  },
+  {
+    "inputs": {
+      "raw_review": {
+        "review_id": "R73482",
+        "rating": "★★★☆☆ (3 stars)",
+        "date": "2024-04-30",
+        "text": "Been using the app for a year now. Love the loyalty program and how easy checkout is. Would be nice if the app remembered my payment info though. Also noticed the app is getting slower with each update. Not a dealbreaker but definitely annoying."
+      }
+    },
+    "outputs": {
+      "structured_review": {
+        "review_id": "R73482",
+        "overall_sentiment": "mixed",
+        "notable_phrases": [
+          "Love the loyalty program",
+          "easy checkout",
+          "app is getting slower with each update"
+        ],
+        "opinions": [
+          {
+            "topic": "loyalty program",
+            "sentiment": "positive",
+            "problem": "",
+            "suggested_solution": ""
+          },
+          {
+            "topic": "checkout process",
+            "sentiment": "positive",
+            "problem": "",
+            "suggested_solution": ""
+          },
+          {
+            "topic": "payment information",
+            "sentiment": "neutral",
+            "problem": "app does not remember payment information",
+            "suggested_solution": "app should remember payment information"
+          },
+          {
+            "topic": "app performance",
+            "sentiment": "negative",
+            "problem": "app is getting slower with each update",
+            "suggested_solution": ""
+          }
+        ]
+      }
+    }
+  },
+  {
+    "inputs": {
+      "raw_review": {
+        "review_id": "R73483",
+        "rating": "★★☆☆☆ (2 stars)",
+        "date": "2024-05-01",
+        "text": "The checkout flow is broken. Cart abandonment is super high because the payment gateway times out. The conversion funnel analytics also don't properly track from PDP to checkout. CTR on recommended items has tanked since last update. Fix your funnel metrics and payment processing."
+      }
+    },
+    "outputs": {
+      "structured_review": {
+        "review_id": "R73483",
+        "overall_sentiment": "negative",
+        "notable_phrases": [
+          "The checkout flow is broken.",
+          "Cart abandonment is super high.",
+          "Fix your funnel metrics and payment processing."
+        ],
+        "opinions": [
+          {
+            "topic": "checkout flow",
+            "sentiment": "negative",
+            "problem": "The checkout flow is broken.",
+            "suggested_solution": ""
+          },
+          {
+            "topic": "payment gateway",
+            "sentiment": "negative",
+            "problem": "Payment gateway times out.",
+            "suggested_solution": "Fix payment processing."
+          },
+          {
+            "topic": "conversion funnel analytics",
+            "sentiment": "negative",
+            "problem": "Analytics don't properly track from PDP to checkout.",
+            "suggested_solution": "Fix your funnel metrics."
+          },
+          {
+            "topic": "CTR on recommended items",
+            "sentiment": "negative",
+            "problem": "CTR has tanked since last update.",
+            "suggested_solution": ""
+          }
+        ]
+      }
+    }
+  }
+]
+

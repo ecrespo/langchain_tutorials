@@ -1,0 +1,34 @@
+{
+  "inputs": {
+    "raw_review": {
+        "review_id": "R73480",
+        "rating": "★★★☆☆ (3 stars)",
+        "date": "2024-04-29",
+        "text": "This app is great, but the search results are not always relevant."
+      }
+  },
+  "reference_outputs": {
+    "structured_review": {
+      "overall_sentiment": "positive",
+      "notable_phrases": [
+        "app is great",
+        "search results are not always relevant"
+      ],
+      "opinions": [
+        {
+          "topic": "app",
+          "sentiment": "positive",
+          "problem": "",
+          "suggested_solution": ""
+        },
+        {
+          "topic": "search results",
+          "sentiment": "negative",
+          "problem": "search results are not always relevant",
+          "suggested_solution": ""
+        }
+      ]
+    }
+  }
+}
+
