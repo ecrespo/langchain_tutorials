@@ -1,0 +1,28 @@
+{
+  "review_id": "R73482",
+  "overall_sentiment": "mixed",
+  "notable_phrases": [
+    "Love the checkout experience",
+    "app has gotten noticeably slower"
+  ],
+  "opinions": [
+    {
+      "topic": "checkout process",
+      "sentiment": "positive",
+      "problem": "",
+      "suggested_solution": ""
+    },
+    {
+      "topic": "app performance",
+      "sentiment": "negative",
+      "problem": "app is getting slower with each update",
+      "suggested_solution": ""
+    },
+    {
+      "topic": "payment information",
+      "sentiment": "neutral",
+      "problem": "app does not remember payment information",
+      "suggested_solution": "add option to save payment details"
+    }
+  ]
+}

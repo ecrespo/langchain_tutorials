@@ -1,0 +1,36 @@
+{
+  "review_id": "R73482",
+  "overall_sentiment": "mixed",
+  "notable_phrases": [
+    "Love the loyalty program",
+    "easy checkout",
+    "app is getting slower with each update"
+  ],
+  "opinions": [
+    {
+      "topic": "loyalty program",
+      "sentiment": "positive",
+      "problem": "",
+      "suggested_solution": ""
+    },
+    {
+      "topic": "checkout process",
+      "sentiment": "positive",
+      "problem": "",
+      "suggested_solution": ""
+    },
+    {
+      "topic": "payment information",
+      "sentiment": "neutral",
+      "problem": "app does not remember payment information",
+      "suggested_solution": "app should remember payment information"
+    },
+    {
+      "topic": "app performance",
+      "sentiment": "negative",
+      "problem": "app is getting slower with each update",
+      "suggested_solution": ""
+    }
+  ]
+}
+

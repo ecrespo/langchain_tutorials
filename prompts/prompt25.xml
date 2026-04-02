@@ -1,0 +1,78 @@
+<task name="App Review Extraction">
+  <input>
+    Given the following review:
+
+    {
+        "review_id": "R73482",
+        "rating": "★★★☆☆ (3 stars)",
+        "date": "2025-04-12",
+        "text": "Love the checkout experience and rewards program! But the app has gotten noticeably slower with recent updates. Would be nice if you could save payment info instead of entering it every time."
+    }
+  </input>
+
+  <output>
+    Convert it into a structured JSON object that conforms to the following schema:
+
+    {
+      "$defs": {
+        "Opinion": {
+          "properties": {
+            "topic": {
+              "description": "The topic of the opinion, one of (App Functionality, UI & UX, Payment & Checkout, Product Information, Order Operations, Customer Service)",
+              "title": "Topic",
+              "type": "string"
+            },
+            "sentiment": {
+              "description": "The sentiment of the opinion (positive, negative, neutral, or mixed)",
+              "title": "Sentiment",
+              "type": "string"
+            },
+            "problem": {
+              "anyOf": [{"type": "string"}, {"type": "null"}],
+              "description": "The problem mentioned, if any",
+              "title": "Problem"
+            },
+            "suggested_solution": {
+              "anyOf": [{"type": "string"}, {"type": "null"}],
+              "description": "A suggested solution to the problem, if applicable",
+              "title": "Suggested Solution"
+            }
+          },
+          "required": ["topic", "sentiment", "problem", "suggested_solution"],
+          "title": "Opinion",
+          "type": "object"
+        }
+      },
+      "properties": {
+        "review_id": {
+          "description": "The ID of the review",
+          "title": "Review Id",
+          "type": "string"
+        },
+        "overall_sentiment": {
+          "description": "The overall sentiment of the review (positive, negative, neutral, or mixed)",
+          "title": "Overall Sentiment",
+          "type": "string"
+        },
+        "notable_phrases": {
+          "description": "Notable phrases or quotes from the review verbatim (max 3 phrases, each under 100 characters each)",
+          "items": {"type": "string"},
+          "title": "Notable Phrases",
+          "type": "array"
+        },
+        "opinions": {
+          "description": "List of opinions expressed in the review",
+          "items": {"$ref": "#/$defs/Opinion"},
+          "title": "Opinions",
+          "type": "array"
+        }
+      },
+      "required": ["review_id", "overall_sentiment", "notable_phrases", "opinions"],
+      "title": "StructuredReview",
+      "type": "object"
+    }
+
+    Output the JSON object only, no other text or delimiters.
+  </output>
+</task>
+
